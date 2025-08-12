@@ -36,6 +36,3 @@ def chat():
     except Exception as e:
         return jsonify({"ladybug": f"Error: {str(e)}"}), 500
 
-#RUNNING THE APP
-if __name__ == "__main__":
-    app.run(debug=True)
