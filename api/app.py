@@ -18,7 +18,7 @@ app = Flask(__name__)
 #BASIC ROUTE
 @app.route("/")
 def home():
-    return send_from_directory("static", "index.html")
+    return send_from_directory(app.static_folder, "index.html")
 
 #CHAT ROUTE
 @app.route("/chat", methods=["POST"])
