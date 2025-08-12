@@ -5,6 +5,7 @@
   ],
   "routes": [
     { "src": "/chat", "dest": "api/app.py" },
+    { "src": "/", "dest": "/static/index.html" },
     { "src": "/(.*)", "dest": "/static/$1" }
   ]
 }
